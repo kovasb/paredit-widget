@@ -130,6 +130,6 @@
 (defn test-paredit-widget []
   (native!)
   (->
-   (frame :title "Paredit Test" :content (paredit-widget "(foo (bar 1))"))
+   (frame :title "Paredit Test" :content (config! (paredit-widget "(foo (bar 1))") :size [300 :by 300]))
    pack!
    show!))
