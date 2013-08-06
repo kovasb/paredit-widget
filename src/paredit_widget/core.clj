@@ -121,11 +121,15 @@
             p (exec-paredit k w)]
         (if p (.consume e))))))
 
-(defn paredit-widget [text]
-  (let [w (javax.swing.JTextArea. text)]
+
+(defn paredit-widget [x]
+  (let [w (if (string? x)
+            (javax.swing.JTextArea. x)
+            x)]
     (.addKeyListener w (key-event-handler w))
     (.addInputMethodListener w (input-method-event-handler w))
     w))
+
 
 (defn test-paredit-widget []
   (native!)
