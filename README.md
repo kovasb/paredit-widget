@@ -16,6 +16,7 @@ Every programming tool carries with it a set of assumptions of what programming,
 
 The goal of paredit-widget is to provide a simple, reusable implemention of the necessities of clojure editing, so that alternative programming environments can be explored.
 
+Because the JVM is the premier clojure platform, paredit-widget is targeted for the JVM and uses Swing. Contribution for a clojurescript port are welcome.
 
 ## Usage
 
