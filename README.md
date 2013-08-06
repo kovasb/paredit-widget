@@ -24,7 +24,7 @@ Paredit-widget supports most standard paredit commands, with their natural bindi
 
 clone the repo, or add to your project dependencies:
 
-    [org.kovas/paredit-widget "0.1.0-SNAPSHOT"]
+    [org.kovas/paredit-widget "0.1.1-SNAPSHOT"]
 
 (at this stage it's recommended to work from source)
 
@@ -32,11 +32,17 @@ require the namespace:
 
     (require '[paredit-widget.core :as p])
 
-create a swing-based widget:
+create a swing-based widget, and initialize with a given string:
 
     (p/paredit-widget "(foo bar)") 
 
 once created, it can be displayed and further manipulated using the standard swing apis (or with seesaw).
+
+create a widget, using a prexisting JTextArea as the basis:
+
+    (p/paredit-widget (javax.swing.JTextArea. "(foo bar)"))    
+
+(this will simply attach appropriate event handlers)
 
 create and display an example widget:
 
