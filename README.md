@@ -22,6 +22,12 @@ Because the JVM is the premier clojure platform, paredit-widget is targeted for 
 
 Paredit-widget supports most standard paredit commands, with their natural bindings. Check the paredit-widget.core/keymap var for the keymap. 
 
+clone the repo, or add to your project dependencies:
+
+    [org.kovas/paredit-widget "0.1.0-SNAPSHOT"]
+
+(at this stage it's recommended to work from source)
+
 require the namespace:
 
     (require '[paredit-widget.core :as p])
