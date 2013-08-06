@@ -23,7 +23,7 @@ Paredit-widget supports most standard paredit commands, with their natural bindi
 
 require the namespace:
 
-    (require 'paredit-widget.core :as p)
+    (require '[paredit-widget.core :as p])
 
 create a swing-based widget:
 
